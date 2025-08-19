@@ -5,6 +5,7 @@ let clickCount = 0;
 let isSmall = false;
 
 cookie.onclick = function() {
+    
     clickCount++;
     counter.textContent = clickCount;
    

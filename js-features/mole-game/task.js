@@ -5,7 +5,7 @@
   const getHole = index => document.getElementById(`hole${index}`);
 
   // Регистрируем обработчики событий для каждой лунки
-  for (let i = 1; i <= 9; i++) {
+  for(let i = 1; i <= 9; i++) {
     getHole(i).onclick = function() {
       // Проверяем, есть ли крот в этой лунке
       if (this.className.includes('hole_has-mole')) {
