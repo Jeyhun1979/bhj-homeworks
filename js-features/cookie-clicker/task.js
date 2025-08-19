@@ -5,11 +5,10 @@ let clickCount = 0;
 let isSmall = false;
 
 cookie.onclick = function() {
-    
     clickCount++;
     counter.textContent = clickCount;
    
-    if (isSmall) {
+    if(isSmall) {
         cookie.width = 200;
         isSmall = false;
     } else {

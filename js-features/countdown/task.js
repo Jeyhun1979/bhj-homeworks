@@ -2,7 +2,6 @@ const timer = document.getElementById('timer');
 let currentSeconds = parseInt(timer.textContent);
 
 const intervalId = setInterval(() => {
-    
     currentSeconds--;
 
     // Повышенный уровень сложности #1: форматируем время в hh:mm:ss
