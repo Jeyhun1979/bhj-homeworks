@@ -27,7 +27,7 @@ function startRotator(rotator) {
     }
     
     const speed = Number(current.dataset.speed) || 1000;
-    setInterval(showNextRotator, speed);
+    setTimeout(showNextRotator, speed);
 }
 
 document.querySelectorAll('.rotator').forEach(startRotator);
