@@ -17,7 +17,7 @@ function setChildrenState(checkbox, checked) {
 function updateParentState(checkbox) {
   let parentInterest = checkbox.closest('.interests')?.closest('.interest');
   while (parentInterest) {
-    const parentCheckbox = parentInterest.querySelector('> label > .interest__check');
+    const parentCheckbox = parentInterest.querySelector(':scope > label > .interest__check');
     const childCheckboxes = parentInterest.querySelectorAll(':scope > .interests > .interest > label > .interest__check');
     const checkedCount = Array.from(childCheckboxes).filter(cb => cb.checked).length;
     const indeterminateCount = Array.from(childCheckboxes).filter(cb => cb.indeterminate).length;
